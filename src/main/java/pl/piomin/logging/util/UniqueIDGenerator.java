@@ -21,6 +21,15 @@ public class UniqueIDGenerator {
         if (correlationId == null)
             correlationId = UUID.randomUUID().toString();
         MDC.put(CORRELATION_ID_HEADER_NAME, correlationId);
+        System.out.println("cricket");
+        System.out.println("cricket");
+        System.out.println("cricket");
+        System.out.println("cricket");
+        String correlationId = request.getHeader(CORRELATION_ID_HEADER_NAME);
+        if (correlationId == null)
+            correlationId = UUID.randomUUID().toString();
+        MDC.put(CORRELATION_ID_HEADER_NAME, correlationId);
+        
     }
 
 }
