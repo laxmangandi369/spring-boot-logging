@@ -24,15 +24,22 @@ public class MainController {
     public String findByIdRequest(@RequestParam Integer id) {
         return "Hello-" + id;
     }
-
+asgdluiwjhc.klsjdf.ljaw
     @PostMapping(value = "/req-param", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public String postWithIdRequest(@RequestParam Integer id) {
         return "Hello-" + id;
     }
-
+shcahkjzscsoicj
     @PostMapping(value = "/req-file")
     public String processFile(@RequestParam("file") MultipartFile file) throws IOException {
         return file.getOriginalFilename() + file.getBytes().length;
     }
+sjkhdwuehczkxcjsioj
+    System.out.println("Hello world");
+    System.out.println("Hello world");
+    System.out.println("Hello world");
+
+
+
 
 }
