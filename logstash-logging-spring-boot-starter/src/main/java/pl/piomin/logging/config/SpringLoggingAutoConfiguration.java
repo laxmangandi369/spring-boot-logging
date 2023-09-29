@@ -87,6 +87,9 @@ public class SpringLoggingAutoConfiguration {
 		logstashTcpSocketAppender.setEncoder(encoder);
 		logstashTcpSocketAppender.start();
 		loggerContext.getLogger(Logger.ROOT_LOGGER_NAME).addAppender(logstashTcpSocketAppender);
+
+		System.out.println("checking branch name issue which contains /");
+		System.out.println("checking branch name issue which contains /");
 		return logstashTcpSocketAppender;
 	}
 
