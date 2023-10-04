@@ -18,6 +18,8 @@ public class UniqueIDGenerator {
 
     public void generateAndSetMDC(ServerHttpRequest request) {
         List<String> requestIds = request.getHeaders().get(requestIdHeaderName);
+
+        System.out.println("checking branch name issue");
         if (requestIds == null)
             MDC.put(requestIdHeaderName, UUID.randomUUID().toString());
         else
