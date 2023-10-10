@@ -9,6 +9,7 @@ public class MainController {
 
     @GetMapping("/{id}")
     public Mono<String> findById(@PathVariable("id") Integer id) {
+        System.out.println("asjdalsfhaskl");
         return Mono.just("Hello-" + id);
     }
 
